@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .arrow {
+    left: -6px;
+    border: 6px solid transparent;
+    border-left: none;
+    @apply border-x-xl-accent;
+  }
+  .main-links > a > img {
+    @apply w-[32px] h-[32px];
+  }
+  .main-advantages > div > img {
+    @apply lg:w-[40px] lg:h-[40px] w-[22px] h-[22px];
+  }
+  .main-advantages > div > span {
+    @apply text-black;
+  }
+  .main-advantages > div {
+    @apply flex items-center gap-2;
+  }
+  .portfolioButton {
+    @apply px-5 py-1 text-center border border-black hover:shadow-md;
+  }
+  .portfolioButton_shadow {
+    box-shadow: -3px 3px 10px 1px rgba(0, 0, 0, 0.2)
+  }
+  .portfolioButton_active {
+    @apply px-5 py-1 text-center text-white border border-black bg-black
+  }
+  .mainPhoneSocial > img {
+    @apply w-[50px] h-[50px];
+  }
+
+  input[type="text"] {
+    @apply outline-none text-center py-1 px-5 w-full border border-transparent;
+  }
+
+  .button {
+    @apply min-w-[300px] py-1 px-5 text-center border border-transparent transition-all hover:shadow-md hover:bg-white;
+  }
+
+  .primaryButton {
+    @apply hover:text-black bg-black hover:border-black text-white;
+  }
+
+  .buttonShadow {
+
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.3))
+  }
+
+  .xlButton {
+    @apply hover:text-xl-accent bg-xl-accent whitespace-nowrap hover:border-xl-accent text-white;
+  }
+  .electricianButton {
+    @apply bg-electrician-accent whitespace-nowrap border-electrician-accent hover:border-electrician-accent hover:text-electrician-accent text-white placeholder:blur-2xl ;
+  }
+  .xlHeading {
+    @apply text-4xl text-xl-accent text-center font-oswald font-light;
+  }
+  .electricianHeading {
+    @apply text-4xl text-electrician-accent text-center font-oswald font-light tracking-[-0.035em];
+  }
+
+  #footerAddress {
+    @apply flex flex-col gap-5 mt-8;
+  }
+
+  #footerAddress > div {
+    @apply flex items-center gap-2;
+  }
+  .msgBg {
+    background: url("/pipes/msgBg.png") no-repeat;
+    transform: translate3d(35px, -42.5px, 0);
+  }
+  @media (min-width: 1024px) {
+    .msgBg {
+      background: url("/pipes/msgBg.png") no-repeat;
+      transform: translate3d(0px, -42.5px, 0);
+    }
+  }
+  .msbgPos {
+    transform: translate3d(-40px, -10px, 0);
+  }
+  .msBgPos2 {
+    transform: translate3d(140px, 0px, 0);
+  }
+  .msBg2 {
+    background: url("/pipes/msgBg2.svg") no-repeat;
+
+  }
+
+  @media (min-width: 1024px) {
+    .xlMagic::before {
+      content: "";
+      position: absolute;
+      top: -27px;
+      right: -54.2px;
+      width: 175px;
+      height: 116px;
+      background: url("/public/pipe_part2.svg") no-repeat;
+      background-size: contain;
+      transform: translateZ(-1px);
+      z-index: -1;
+    }
+    .xlMagic::after {
+      content: "";
+      position: absolute;
+      top: -27px;
+      right: -54.2px;
+      width: 175px;
+      height: 116px;
+      background: url("/public/pipe_part1.svg") no-repeat;
+      background-size: contain;
+      z-index: 100;
+    }
+  }
+  @media (min-width: 1280px) {
+    .xlMagic::before {
+      content: "";
+      position: absolute;
+      top: -42px;
+      right: -74px;
+      width: 250px;
+      height: 167px;
+      background: url("/pipe_part2.svg") no-repeat;
+      background-size: contain;
+      transform: translateZ(-1px);
+      z-index: -1;
+    }
+    .xlMagic::after {
+      content: "";
+      position: absolute;
+      top: -42px;
+      right: -74.2px;
+      width: 250px;
+      height: 167px;
+      background: url("/pipe_part1.svg") no-repeat;
+      background-size: contain;
+      z-index: 100;
+    }
+  }
+
+  .serviceShadow {
+    box-shadow: 8px 8px 10px 2px rgba(0, 0, 0, 0.25);
+  }
+  .electricFormShadow {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  }
+  .bgElectricianAbout {
+    background: linear-gradient(180deg, #9DA2A6 0%, #A7ACB0 18.51%, #B0B7BF 53.95%, #ACB4BF 74.91%, #ABB5BF 100%);
+  }
+
+  @media (min-width: 320px) {
+    #calcInput_1 {
+      position: absolute;
+      left: 150px;
+      top: 115px;
+    }
+    #calcInput_2 {
+      position: absolute;
+      top: 140px;
+      left: 50px;
+    }
+    #calcInput_3 {
+      position: absolute;
+      top: 197px;
+      left: 55px;
+    }
+    #calcInput_4 {
+      position: absolute;
+      top: 189px;
+      left: 153px;
+    }
+    #calcInput_5 {
+      position: absolute;
+      top: 45px;
+      left: 30px;
+    }
+  }
+  @media (min-width: 640px) {
+    #calcInput_1 {
+      position: absolute;
+      left: 235px;
+      top: 180px;
+    }
+    #calcInput_2 {
+      position: absolute;
+      top: 225px;
+      left: 60px;
+    }
+    #calcInput_3 {
+      position: absolute;
+      top: 315px;
+      left: 90px;
+    }
+    #calcInput_4 {
+      position: absolute;
+      top: 300px;
+      left: 240px;
+    }
+    #calcInput_5 {
+      position: absolute;
+      top: 65px;
+      left: 52px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #calcInput_1 {
+      position: absolute;
+      top: 300px;
+      left: 420px;
+    }
+    #calcInput_2 {
+      position: absolute;
+      top: 365px;
+      left: 120px;
+    }
+    #calcInput_3 {
+      position: absolute;
+      top: 575px;
+      left: 165px;
+    }
+    #calcInput_4 {
+      position: absolute;
+      top: 540px;
+      left: 440px;
+    }
+    #calcInput_5 {
+      position: absolute;
+      top: 130px;
+      left: 100px;
+    }
+  }
+
+
+}
