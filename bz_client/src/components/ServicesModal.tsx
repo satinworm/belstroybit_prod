@@ -72,7 +72,7 @@ export const ServicesModal = (props: Props) => {
 
   const onSubmit = async (data: any) => {
     console.log(data, title)
-    const res = await axios.post('http://localhost:3100/applications', {
+    const res = await axios.post('http://localhost:3101/applications', {
       ...data,
       title
     })
