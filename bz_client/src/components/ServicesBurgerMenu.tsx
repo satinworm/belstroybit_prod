@@ -42,14 +42,14 @@ export const serviceCategories = [
       { name: 'Обогреватели', link: 'electrical-works/Heaters' }
     ]
   },
-  {
-    name: 'Сантехнические работы',
-    subtypes: ['Subtype 8A', 'Subtype 8B', 'Subtype 8C']
-  },
-  {
-    name: 'Отделочные работы',
-    subtypes: ['Subtype 9A', 'Subtype 9B', 'Subtype 9C']
-  },
+  // {
+  //   name: 'Сантехнические работы',
+  //   subtypes: ['Subtype 8A', 'Subtype 8B', 'Subtype 8C']
+  // },
+  // {
+  //   name: 'Отделочные работы',
+  //   subtypes: ['Subtype 9A', 'Subtype 9B', 'Subtype 9C']
+  // },
   // {
   //   name: 'Облицовка',
   //   subtypes: ['Subtype 10A', 'Subtype 10B', 'Subtype 10C']

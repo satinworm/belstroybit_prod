@@ -6,30 +6,30 @@ type Props = {
   close: () => void
 }
 export const serviceCategories = [
-  {
-    name: 'Земляные работы',
-    subtypes: ['Земляные работы', 'Земляные работы 1', 'Земляные работы 2']
-  },
-  {
-    name: 'Бетонные работы – фундамент',
-    subtypes: ['Subtype 2A', 'Subtype 2B', 'Subtype 2C']
-  },
-  {
-    name: 'Возведение стен',
-    subtypes: ['Subtype 3A', 'Subtype 3B', 'Subtype 3C']
-  },
-  {
-    name: 'Устройство крыши',
-    subtypes: ['Subtype 4A', 'Subtype 4B', 'Subtype 4C']
-  },
-  {
-    name: 'Установка окон',
-    subtypes: ['Subtype 5A', 'Subtype 5B', 'Subtype 5C']
-  },
-  {
-    name: 'Чычерновые работы',
-    subtypes: ['Subtype 6A', 'Subtype 6B', 'Subtype 6C']
-  },
+  // {
+  //   name: 'Земляные работы',
+  //   subtypes: ['Земляные работы', 'Земляные работы 1', 'Земляные работы 2']
+  // },
+  // {
+  //   name: 'Бетонные работы – фундамент',
+  //   subtypes: ['Subtype 2A', 'Subtype 2B', 'Subtype 2C']
+  // },
+  // {
+  //   name: 'Возведение стен',
+  //   subtypes: ['Subtype 3A', 'Subtype 3B', 'Subtype 3C']
+  // },
+  // {
+  //   name: 'Устройство крыши',
+  //   subtypes: ['Subtype 4A', 'Subtype 4B', 'Subtype 4C']
+  // },
+  // {
+  //   name: 'Установка окон',
+  //   subtypes: ['Subtype 5A', 'Subtype 5B', 'Subtype 5C']
+  // },
+  // {
+  //   name: 'Чычерновые работы',
+  //   subtypes: ['Subtype 6A', 'Subtype 6B', 'Subtype 6C']
+  // },
   {
     name: 'Электрические работы',
     subtypes: [
@@ -45,22 +45,22 @@ export const serviceCategories = [
     name: 'Сантехнические работы',
     subtypes: ['Subtype 8A', 'Subtype 8B', 'Subtype 8C']
   },
-  {
-    name: 'Отделочные работы',
-    subtypes: ['Subtype 9A', 'Subtype 9B', 'Subtype 9C']
-  },
-  {
-    name: 'Облицовка',
-    subtypes: ['Subtype 10A', 'Subtype 10B', 'Subtype 10C']
-  },
-  {
-    name: 'Установка межкомнатных дверей',
-    subtypes: ['Subtype 11A', 'Subtype 11B', 'Subtype 11C']
-  },
-  {
-    name: 'Укладка тротуарной плитки',
-    subtypes: ['Subtype 12A', 'Subtype 12B', 'Subtype 12C']
-  }
+  // {
+  //   name: 'Отделочные работы',
+  //   subtypes: ['Subtype 9A', 'Subtype 9B', 'Subtype 9C']
+  // },
+  // {
+  //   name: 'Облицовка',
+  //   subtypes: ['Subtype 10A', 'Subtype 10B', 'Subtype 10C']
+  // },
+  // {
+  //   name: 'Установка межкомнатных дверей',
+  //   subtypes: ['Subtype 11A', 'Subtype 11B', 'Subtype 11C']
+  // },
+  // {
+  //   name: 'Укладка тротуарной плитки',
+  //   subtypes: ['Subtype 12A', 'Subtype 12B', 'Subtype 12C']
+  // }
 ]
 
 export const Services = (props: Props) => {
