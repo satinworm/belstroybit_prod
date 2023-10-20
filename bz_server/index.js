@@ -11,10 +11,7 @@ const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
 function escape(text) {
   return text.replace(/[_*[\]()~`>#+\-=|{}.!]/g, "\\$&");
 }
-const { MongoClient } = require("mongodb");
-const uri =
-  "mongodb+srv://satinworm:qbkMZ45850534@cluster0.84udnfy.mongodb.net/?retryWrites=true&w=majority";
-const client = new MongoClient(uri);
+
 
 const app = express();
 app.use(cors());
