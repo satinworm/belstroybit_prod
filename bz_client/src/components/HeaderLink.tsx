@@ -13,11 +13,13 @@ export const HeaderLink = (props: Props) => {
   const isElectricPage = location.pathname.includes(
     'electrical-works/ElectricianServices'
   )
+  const isRoofsPage = location.pathname.includes('roofing-works/roofs')
   const { link, label } = props
   const textColor =
     (isMainPage && 'text-accent') ||
     (isPipePage && 'text-xl-accent') ||
-    (isElectricPage && 'text-accent')
+    (isElectricPage && 'text-accent') ||
+    isRoofsPage
   return (
     <NavLink
       className={({ isActive }) =>

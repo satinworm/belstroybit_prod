@@ -35,7 +35,7 @@
   }
 
   input[type="text"] {
-    @apply outline-none text-center py-1 px-5 w-full border border-transparent;
+    @apply outline-none text-center py-1 px-5 w-full border;
   }
 
   .button {
@@ -64,6 +64,27 @@
     @apply text-4xl text-electrician-accent text-center font-oswald font-light tracking-[-0.035em];
   }
 
+  .propertyPageSwiperThumbSlide {
+	@apply  max-w-[120px]  cursor-pointer  border-[3px]  border-white;
+ }
+ 
+ .swiper-slide-thumb-active {
+	@apply ! border-primary;
+ }
+ #__next {
+	@apply  flex  min-h-screen  flex-col  justify-between;
+ }
+ 
+ .mobile-action-button {
+	@apply  absolute  left-0  bottom-0  z-10  flex  w-full  items-center  justify-center  gap-6  bg-primary  py-5  text-xl  text-white  transition-all hover: bg-slate-600 lg: hidden;
+ }
+ svg.star-svg {
+	@apply inline
+ }
+
+
+  
+
   #footerAddress {
     @apply flex flex-col gap-5 mt-8;
   }
@@ -89,7 +110,6 @@
   }
   .msBg2 {
     background: url("/pipes/msgBg2.svg") no-repeat;
-
   }
 
   @media (min-width: 1024px) {
@@ -236,5 +256,88 @@
     }
   }
 
+  .swiper-button-prev {
+	opacity: 0 !important;
+ }
+
+ .swiper-button-next {
+	opacity: 0 !important;
+ }
+
+ .splide__pagination {
+	bottom: -2rem !important;
+ }
+ .splide:not(.is-overflow) .splide__pagination {
+	display: flex !important;
+ }
+ 
+ .splide__arrow {
+	top: 102% !important;
+	background: #6eb8d2 !important;
+ }
+ .splide__arrow--prev {
+	left: 50% !important;
+	transform: translateX(-105%) !important;
+ }
+ .splide__arrow .splide__arrow--prev:active {
+	transform: translateY(5px);
+ }
+ .splide__arrow--next {
+	right: 50% !important;
+	transform: translateX(105%) !important;
+ }
+ 
+ .splide__pagination__page {
+	background: white !important;
+	border: 2px solid #6599ad !important;
+	border-radius: 100% !important;
+	display: inline-block;
+	height: 20px !important;
+	width: 20px !important;
+	margin: 2px !important;
+	opacity: 0.7;
+	padding: 0;
+	position: relative;
+	transition: transform 0.2s linear;
+	z-index: 10;
+ }
+ .splide__pagination__page.is-active {
+	background: #6599ad !important;
+	transform: scale(1.1) !important;
+	z-index: 10;
+ }
+ ::-webkit-scrollbar {
+	width: 5px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+	background-color: #ebebeb;
+	border-radius: 10px;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #6d6d6d;
+ }
+ html {
+	scrollbar-width: thin; /* Ширина скроллбара */
+	scrollbar-color: #6d6d6d #ebebeb; /* Цвет палочки и фона */
+ }
+ 
+ /* Скроллбар на наведении */
+ html:hover {
+	scrollbar-color: #444444 #ebebeb;
+ }
+ .star-svg {
+	display: inline;
+ }
+ .btnShadow {
+	filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+ }
+
+
+
 
 }
+
+

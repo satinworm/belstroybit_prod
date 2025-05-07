@@ -6,7 +6,6 @@ import { Fragment, useState } from 'react'
 import Navigation from './Navigation'
 import { ConsultationModal } from './ConsultationModal'
 import { NavLink, useLocation } from 'react-router-dom'
-import { Link, animateScroll as scroll } from 'react-scroll'
 const navLinks = [
   // {
   //   id: 0,
@@ -34,7 +33,7 @@ const navLinks = [
     id: 4,
     // link: '/partners',
     label: 'Партнеры',
-    link: '/',
+    link: '/'
   },
   {
     id: 5,
@@ -116,7 +115,8 @@ export const Header = () => {
                       className={`
                 ${
                   open
-                    ? `border-b-${textColor} font-medium text-${textColor}`
+                    ? // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+                      `border-b-${textColor} font-medium text-${textColor}`
                     : 'font-base border-b-transparent text-white'
                 }
                 group flex items-center border-b-2 pb-2 text-lg focus:outline-none`}
@@ -151,20 +151,10 @@ export const Header = () => {
                 )}
               </Popover>
               {navLinks.map(link => (
-                // <Link
-                //   key={link.id}
-                //   to={link.targe}
-                //   spy={true}
-                //   smooth={true}
-                //   duration={500}
-                // >
                 <HeaderLink {...link} key={link.id} />
-                // </Link>
               ))}
             </nav>
-            {/*<div className={'absolute'}>*/}
             <Navigation />
-            {/*</div>*/}
           </div>
         </div>
       </header>

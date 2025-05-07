@@ -27,6 +27,7 @@ const SideMenu: FC = () => {
     'electrical-works/ElectricianServices'
   )
   const isHeaterPage = location.pathname.includes('electrical-works/Heaters')
+  const isRoofPage = location.pathname.includes('roofing-works/roofs')
 
   const handleClick = () => {
     setIsOpen(!isOpen)
@@ -41,7 +42,7 @@ const SideMenu: FC = () => {
   }, [isOpen])
 
   return (
-    <div className='fixed relative inset-0 z-50 '>
+    <div className='relative inset-0 z-50 '>
       <div
         className={clsx('fixed inset-0 bg-black/80 backdrop-blur-[8px]')}
         onClick={handleClick}
@@ -160,6 +161,7 @@ const SideMenu: FC = () => {
           {isPipePage && <BurgerMenuXLPipe width={36} height={36} />}
           {isElectricPage && <BurgerMenuElectric width={36} height={36} />}
           {isHeaterPage && <BurgerMenuElectric width={36} height={36} />}
+          {isRoofPage && <BurgerMenuElectric width={36} height={36} />}
         </button>
       )}
     </div>

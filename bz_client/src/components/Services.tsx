@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { SetStateAction, useState } from 'react'
 import clsx from 'clsx'
 import { NavLink } from 'react-router-dom'
 
@@ -42,9 +42,13 @@ export const serviceCategories = [
     ]
   },
   {
+    name: 'Устройства крыши',
+    subtypes: [{ name: 'Кровельные работы', link: 'roofs' }]
+  },
+  {
     name: 'Сантехнические работы',
     subtypes: ['Subtype 8A', 'Subtype 8B', 'Subtype 8C']
-  },
+  }
   // {
   //   name: 'Отделочные работы',
   //   subtypes: ['Subtype 9A', 'Subtype 9B', 'Subtype 9C']
@@ -66,7 +70,10 @@ export const serviceCategories = [
 export const Services = (props: Props) => {
   const { close } = props
   const [selectedService, setSelectedService] = useState('Электрические работы')
-  const handleServiceChange = event => {
+  const handleServiceChange = (event: {
+    target: { value: SetStateAction<string> }
+  }) => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
     setSelectedService(event.target.value)
   }
   return (
@@ -107,8 +114,8 @@ export const Services = (props: Props) => {
             </div>
             <ul className='mt-4'>
               {serviceCategories
-                .find(category => category.name === selectedService)
-                .subtypes.map((subtype, index) => (
+                ?.find(category => category.name === selectedService)
+                ?.subtypes.map((subtype, index) => (
                   <li key={index} className='text-base'>
                     <NavLink onClick={close} to={`/${subtype.link}`}>
                       {subtype.name}

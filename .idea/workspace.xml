@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb1b0752-6050-4976-b565-94f66da18db5" name="Changes" comment="1910 - SOME FIXES">
+      <change afterPath="$PROJECT_DIR$/bz_client/src/components/roofs/RoofsMainsection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bz_client/src/pages/Roofs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/public/electrician-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/public/electrician-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/components/HeaderLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/components/HeaderLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/components/MainPagePhoneSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/components/MainPagePhoneSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/components/MainPageServicesSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/components/MainPageServicesSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/components/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/components/Navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/components/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/components/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/components/TopScroller.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/components/TopScroller.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/hooks/useIsInViewport.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/hooks/useIsInViewport.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/src/pages/SideMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/src/pages/SideMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/tailwind.config.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/tailwind.config.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bz_client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bz_client/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;satinworm&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/satinworm/belstroybit_prod.git&quot;,
+    &quot;accountId&quot;: &quot;cad3e6cf-6094-4c6f-b697-75d5b02d5a9d&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2Pj8EKI2KJYT3ZOd2fbtM1LV8W1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/allfather/Work/beltstroybit&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/allfather/Work/beltstroybit/bz_client/node_modules/prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/allfather/Work/beltstroybit/bz_client/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/bz_client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb1b0752-6050-4976-b565-94f66da18db5" name="Changes" comment="" />
+      <created>1683959017829</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683959017829</updated>
+      <workItem from="1683959018861" duration="700000" />
+      <workItem from="1695359146056" duration="300000" />
+      <workItem from="1695801300095" duration="386000" />
+      <workItem from="1695814660452" duration="22000" />
+      <workItem from="1695814832550" duration="1368000" />
+      <workItem from="1695839955435" duration="2000" />
+      <workItem from="1695902360621" duration="86000" />
+      <workItem from="1697698354513" duration="655000" />
+      <workItem from="1697699145560" duration="475000" />
+      <workItem from="1697699628981" duration="2471000" />
+      <workItem from="1697706043789" duration="1716000" />
+      <workItem from="1697707812443" duration="904000" />
+      <workItem from="1697797402044" duration="1074000" />
+      <workItem from="1697820308875" duration="653000" />
+      <workItem from="1697910156435" duration="3000" />
+      <workItem from="1700216897392" duration="742000" />
+      <workItem from="1700294815344" duration="725000" />
+      <workItem from="1700381796043" duration="25000" />
+      <workItem from="1700644572796" duration="1020000" />
+      <workItem from="1700944095852" duration="124000" />
+      <workItem from="1746180187195" duration="4495000" />
+      <workItem from="1746445006323" duration="3000" />
+    </task>
+    <task id="LOCAL-00001" summary="1910 - services fixes">
+      <option name="closed" value="true" />
+      <created>1697706437289</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697706437289</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1910 - axios fix">
+      <option name="closed" value="true" />
+      <created>1697707385636</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697707385636</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1910 - fix bot">
+      <option name="closed" value="true" />
+      <created>1697707841994</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697707841994</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1910 - SOME FIXES">
+      <option name="closed" value="true" />
+      <created>1697804782910</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697804782910</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1910 - services fixes" />
+    <MESSAGE value="1910 - axios fix" />
+    <MESSAGE value="1910 - fix bot" />
+    <MESSAGE value="1910 - SOME FIXES" />
+    <option name="LAST_COMMIT_MESSAGE" value="1910 - SOME FIXES" />
+  </component>
+</project>
