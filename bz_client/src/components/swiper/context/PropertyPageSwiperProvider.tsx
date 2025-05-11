@@ -1,7 +1,7 @@
-import image2 from "@/assets/portfolio/2.jpg";
-import image3 from "@/assets/portfolio/3.jpg";
-import image4 from "@/assets/portfolio/4.jpg";
-import image5 from "@/assets/portfolio/5.jpg";
+import image2 from "/portfolio/2.jpg";
+import image3 from "/portfolio/3.jpg";
+import image4 from "/portfolio/4.jpg";
+import image5 from "/portfolio/5.jpg";
 import {
 	type PropsWithChildren,
 	createContext,
