@@ -1,7 +1,3 @@
-import image2 from "/portfolio/2.jpg";
-import image3 from "/portfolio/3.jpg";
-import image4 from "/portfolio/4.jpg";
-import image5 from "/portfolio/5.jpg";
 import {
 	type PropsWithChildren,
 	createContext,
@@ -12,7 +8,6 @@ import {
 } from "react";
 import type { Swiper } from "swiper/types";
 import type { TStrapiMedia } from "../api.types";
-import image1 from "/public/portfolio/1.jpg";
 export type StrapiArrayResponse = {
 	data: Array<{
 		id: number;
@@ -51,7 +46,7 @@ const imagesInit = [
 			ext: ".jpg",
 			mime: "image/jpeg",
 			size: 120.5,
-			url: image1,
+			url: "/portfolio/1.jpg",
 			previewUrl: "/uploads/preview_image1.jpg",
 			provider: "local",
 			provider_metadata: null,
@@ -71,7 +66,7 @@ const imagesInit = [
 			ext: ".png",
 			mime: "image/png",
 			size: 200.0,
-			url: image2,
+			url: "/portfolio/2.jpg",
 			previewUrl: "/uploads/preview_image2.png",
 			provider: "local",
 			provider_metadata: null,
@@ -91,7 +86,7 @@ const imagesInit = [
 			ext: ".jpg",
 			mime: "image/jpeg",
 			size: 120.5,
-			url: image3,
+			url: "/portfolio/3.jpg",
 			previewUrl: "/uploads/preview_image3.jpg",
 			provider: "local",
 			provider_metadata: null,
@@ -111,7 +106,7 @@ const imagesInit = [
 			ext: ".jpg",
 			mime: "image/jpeg",
 			size: 120.5,
-			url: image4,
+			url: "/portfolio/4.jpg",
 			previewUrl: "/uploads/preview_image4.jpg",
 			provider: "local",
 			provider_metadata: null,
@@ -131,7 +126,7 @@ const imagesInit = [
 			ext: ".jpg",
 			mime: "image/jpeg",
 			size: 120.5,
-			url: image5,
+			url: "/portfolio/5.jpg",
 			previewUrl: "/uploads/preview_image5.jpg",
 			provider: "local",
 			provider_metadata: null,
