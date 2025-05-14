@@ -1,10 +1,10 @@
-import { SetStateAction, useState } from 'react'
-import clsx from 'clsx'
-import { NavLink } from 'react-router-dom'
+import clsx from "clsx";
+import { type SetStateAction, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 type Props = {
-  close: () => void
-}
+	close: () => void;
+};
 export const serviceCategories = [
 	// {
 	//   name: 'Земляные работы',
@@ -45,7 +45,7 @@ export const serviceCategories = [
 		name: "Устройства крыши",
 		subtypes: [
 			{ name: "Кровельные работы", link: "roofs" },
-			{ name: "Фасады", link: "facades" },
+			// { name: "Фасады", link: "facades" },
 		],
 	},
 	{
@@ -71,64 +71,66 @@ export const serviceCategories = [
 ];
 
 export const Services = (props: Props) => {
-  const { close } = props
-  const [selectedService, setSelectedService] = useState('Электрические работы')
-  const handleServiceChange = (event: {
-    target: { value: SetStateAction<string> }
-  }) => {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-    setSelectedService(event.target.value)
-  }
-  return (
-    <div id='services' className='flex gap-5 border-t-2 border-black'>
-      <div className='w-fit border-r-2 border-black py-4'>
-        <ul className='w-72 space-y-1 transition-all duration-300'>
-          {serviceCategories.map((category, index) => (
-            <li
-              className={clsx(
-                'w-fit border-b-2 transition-all duration-300',
-                selectedService === category.name
-                  ? 'border-black'
-                  : 'border-transparent'
-              )}
-              key={index}
-            >
-              <button
-                className={clsx(
-                  'py-1 text-left text-[16px] leading-[19.5px] transition-all duration-300',
-                  selectedService === category.name &&
-                    'text-[20px] font-medium leading-[24px]'
-                )}
-                type='button'
-                value={category.name}
-                onClick={handleServiceChange}
-              >
-                {category.name}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className='w-full p-3'>
-        {selectedService && (
-          <div>
-            <div className='text-center text-lg font-semibold'>
-              {selectedService}:
-            </div>
-            <ul className='mt-4'>
-              {serviceCategories
-                ?.find(category => category.name === selectedService)
-                ?.subtypes.map((subtype, index) => (
-                  <li key={index} className='text-base'>
-                    <NavLink onClick={close} to={`/${subtype.link}`}>
-                      {subtype.name}
-                    </NavLink>
-                  </li>
-                ))}
-            </ul>
-          </div>
-        )}
-      </div>
-    </div>
-  )
-}
+	const { close } = props;
+	const [selectedService, setSelectedService] = useState(
+		"Электрические работы",
+	);
+	const handleServiceChange = (event: {
+		target: { value: SetStateAction<string> };
+	}) => {
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+		setSelectedService(event.target.value);
+	};
+	return (
+		<div id="services" className="flex gap-5 border-t-2 border-black">
+			<div className="w-fit border-r-2 border-black py-4">
+				<ul className="w-72 space-y-1 transition-all duration-300">
+					{serviceCategories.map((category, index) => (
+						<li
+							className={clsx(
+								"w-fit border-b-2 transition-all duration-300",
+								selectedService === category.name
+									? "border-black"
+									: "border-transparent",
+							)}
+							key={index}
+						>
+							<button
+								className={clsx(
+									"py-1 text-left text-[16px] leading-[19.5px] transition-all duration-300",
+									selectedService === category.name &&
+										"text-[20px] font-medium leading-[24px]",
+								)}
+								type="button"
+								value={category.name}
+								onClick={handleServiceChange}
+							>
+								{category.name}
+							</button>
+						</li>
+					))}
+				</ul>
+			</div>
+			<div className="w-full p-3">
+				{selectedService && (
+					<div>
+						<div className="text-center text-lg font-semibold">
+							{selectedService}:
+						</div>
+						<ul className="mt-4">
+							{serviceCategories
+								?.find((category) => category.name === selectedService)
+								?.subtypes.map((subtype, index) => (
+									<li key={index} className="text-base">
+										<NavLink onClick={close} to={`/${subtype.link}`}>
+											{subtype.name}
+										</NavLink>
+									</li>
+								))}
+						</ul>
+					</div>
+				)}
+			</div>
+		</div>
+	);
+};

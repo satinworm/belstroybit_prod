@@ -202,7 +202,7 @@ export default function RoofsReviews(props: any) {
 					position="right"
 					id="roof-types"
 				/>
-				<div className="mt-10 flex w-full flex-col gap-12 md:mt-24 md:flex-row md:gap-3">
+				<div className="mt-10 flex w-full flex-col gap-6 md:mt-24 md:flex-row md:gap-3">
 					<Splide
 						className="relative z-[2] w-full md:w-1/2 xl:w-2/3"
 						// render
